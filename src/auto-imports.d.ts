@@ -3,9 +3,14 @@ export {}
 declare global {
   const createRef: typeof import('react')['createRef']
   const forwardRef: typeof import('react')['forwardRef']
+  const isDarkMode: typeof import('./utils/setApplicationTheme.js')['isDarkMode']
   const lazy: typeof import('react')['lazy']
   const memo: typeof import('react')['memo']
+  const setApplicationTheme: typeof import('./utils/setApplicationTheme.js')['default']
   const startTransition: typeof import('react')['startTransition']
+  const themeStore: typeof import('./store/themeStore')['default']
+  const toDark: typeof import('./utils/changeAppDarkMode')['toDark']
+  const toLight: typeof import('./utils/changeAppDarkMode')['toLight']
   const useCallback: typeof import('react')['useCallback']
   const useContext: typeof import('react')['useContext']
   const useDebugValue: typeof import('react')['useDebugValue']
@@ -31,4 +36,5 @@ declare global {
   const useState: typeof import('react')['useState']
   const useSyncExternalStore: typeof import('react')['useSyncExternalStore']
   const useTransition: typeof import('react')['useTransition']
+  const userStore: typeof import('./store/userStore')['default']
 }

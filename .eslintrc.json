@@ -6,8 +6,7 @@
     "extends": [
         "plugin:react/recommended",
         "standard",
-        "prettier",
-        "./.autolint.json"
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {

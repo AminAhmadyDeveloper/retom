@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
 html {
   height: 100vh;
@@ -12,4 +13,5 @@ body {
 
 #root {
   height: 100vh;
+  @apply bg-white dark:bg-[#121212];
 }
