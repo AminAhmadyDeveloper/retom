@@ -1,0 +1,14 @@
+{
+  "about": "À propos",
+  "back": "Retour",
+  "go": "Essayer",
+  "home": "Accueil",
+  "toggleDark": "Basculer en mode sombre",
+  "toggleLangs": "Changer de langue",
+  "desc": "Exemple d'application Vite",
+  "dynamicRoute": "Démo de route dynamique",
+  "hi": "Salut, {changingName}!",
+  "aka": "Aussi connu sous le nom de",
+  "whatsYourName": "Comment t'appelles-tu ?",
+  "notFound": "Page non trouvée"
+}

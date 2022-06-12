@@ -2,7 +2,8 @@ import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 import Pages from "vite-plugin-pages"
 import AutoImport from "unplugin-auto-import/vite"
-import Icons from 'unplugin-icons/vite'
+import Icons from "unplugin-icons/vite"
+import { VitePWA } from "vite-plugin-pwa"
 import path from "path"
 
 export default defineConfig({
@@ -33,6 +34,7 @@ export default defineConfig({
       ],
       vueTemplate: false,
     }),
-    Icons({ compiler: 'jsx', jsx: 'react' })
+    Icons({ compiler: "jsx", jsx: "react" }),
+    VitePWA()
   ],
 })
