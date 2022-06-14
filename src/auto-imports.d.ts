@@ -3,11 +3,11 @@ export {}
 declare global {
   const createRef: typeof import('react')['createRef']
   const forwardRef: typeof import('react')['forwardRef']
-  const isDarkMode: typeof import('./utils/setApplicationTheme.js')['isDarkMode']
+  const langStore: typeof import('./store/langStore')['default']
   const lazy: typeof import('react')['lazy']
   const memo: typeof import('react')['memo']
-  const setApplicationTheme: typeof import('./utils/setApplicationTheme.js')['default']
   const startTransition: typeof import('react')['startTransition']
+  const styleConstants: typeof import('./utils/styleConstants')['default']
   const toDark: typeof import('./utils/changeAppDarkMode')['toDark']
   const toLight: typeof import('./utils/changeAppDarkMode')['toLight']
   const useCallback: typeof import('react')['useCallback']

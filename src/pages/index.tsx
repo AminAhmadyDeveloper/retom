@@ -4,11 +4,15 @@ import IconRetom from "~icons/carbon/circle-packing"
 import { useSelector, useDispatch } from "react-redux"
 import { setName } from "@store/userStore"
 import styleConstants from "@utils/styleConstants"
-import { FormattedMessage, useIntl } from "react-intl"
+import { useIntl } from "react-intl"
+import fa from "@assets/i18n/fa.json"
+import fr from "@assets/i18n/fr.json"
 
 function index() {
   const dispatch = useDispatch()
   const intl = useIntl()
+  intl.messages = askLanguage().lang
+  intl.locale = askLanguage().local
   
   return (
     <div className="flex flex-col items-center p-10">
@@ -18,10 +22,7 @@ function index() {
         <p className="text-center text-xs opacity-50 dark:text-white">(Vitesse For React)</p>
       </div>
       <p className="text-center text-sm mt-2 opacity-75 dark:text-white">
-        <FormattedMessage
-            id="desc"
-            defaultMessage="Opinionated Vite Starter Template"
-        />
+        {intl.messages.desc}
       </p>
       <input onChange={onNameChange}
       className={styleConstants.InputTextClass}
@@ -39,6 +40,16 @@ function index() {
   function go() {
     const name = useSelector(state => state.user.name)
     return `/hi/${name}`
+  }
+
+  function askLanguage() {
+    const langIndex = useSelector(state => state.lang.lang)
+    const langList = [fa, fr]
+    const localList = ["fa", "fr"]
+    return {
+      lang: langList[langIndex],
+      local: localList[langIndex]
+    }
   }
 }
 

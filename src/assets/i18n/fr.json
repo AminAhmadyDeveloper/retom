@@ -7,7 +7,7 @@
   "toggleLangs": "Changer de langue",
   "desc": "Exemple d'application Vite",
   "dynamicRoute": "Démo de route dynamique",
-  "hi": "Salut, {changingName}!",
+  "hi": "Salut,",
   "aka": "Aussi connu sous le nom de",
   "whatsYourName": "Comment t'appelles-tu ?",
   "notFound": "Page non trouvée"

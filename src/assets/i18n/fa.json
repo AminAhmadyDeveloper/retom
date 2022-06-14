@@ -6,8 +6,8 @@
   "toggleDark": "تغییر حالت تاریک",
   "toggleLangs": "تغییر زبان",
   "desc": "نمونه برنامه سریع",
-  "dynamicRoute": "نمونه نمایشی جاده پویا",
-  "hi": "سلام، {changingName}!",
+  "dynamicRoute": "نمونه نمایشی مسیر پویا",
+  "hi": "سلام،",
   "aka": "شناخته شده به اسم",
   "whatsYourName": "اسمتون چیه؟",
   "notFound": "پیدا نشد"
